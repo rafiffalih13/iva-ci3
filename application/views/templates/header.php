@@ -66,7 +66,7 @@
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-		<a class="navbar-brand" href="<?php echo base_url(); ?>">Logo</a>
+		<a class="navbar-brand" href="<?php echo base_url(); ?>">Kios IVA </a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -78,17 +78,29 @@
 									}; ?>">
 					<a class="nav-link" href="<?php echo base_url(); ?>">Home <span class="sr-only">(current)</span> </a>
 				</li>
-				<li class="nav-item <?php if ($title == "Jadwal") {
+				<li class="nav-item <?php if ($title == "artikel") {
 										echo "active";
 									}; ?>">
-					<a class="nav-link" href="<?php echo base_url(); ?>jadwal">Jadwal</a>
+					<a class="nav-link" href="<?php echo base_url(); ?>artikel">Artikel Edukasi <span class="sr-only">(current)</span> </a>
 				</li>
-				<?php if ($this->session->userdata('logged_in')) : ?>
-					<li class="nav-item <?php if ($title == "Input Jadwal") {
+				<?php if (!$this->session->userdata('logged_in')) : ?>
+					<li class="nav-item <?php if ($title == "Pendaftaran") {
 											echo "active";
 										}; ?>">
-						<a class="nav-link" href="<?php echo base_url(); ?>inputjadwal">InputJadwal</a>
+						<a class="nav-link" href="<?php echo base_url(); ?>pendaftaran">Pendaftaran & Konsultasi Calon Pasien</a>
 					<?php endif; ?>
+					<li class="nav-item <?php if ($title == "Jadwal") {
+											echo "active";
+										}; ?>">
+						<a class="nav-link" href="<?php echo base_url(); ?>jadwal">Jadwal Pasien Terdaftar</a>
+					</li>
+					<?php if ($this->session->userdata('logged_in')) : ?>
+						<li class="nav-item <?php if ($title == "Input Jadwal") {
+												echo "active";
+											}; ?>">
+							<a class="nav-link" href="<?php echo base_url(); ?>inputjadwal">Input Jadwal</a>
+						<?php endif; ?>
+
 
 			</ul>
 

@@ -57,3 +57,5 @@ $route['translate_uri_dashes'] = FALSE;
 // --------- Added Route --------- //
 $route['jadwal'] = 'C_jadwal';
 $route['inputjadwal'] = 'C_dokter';
+$route['pendaftaran'] = 'C_home/pendaftaran';
+$route['artikel'] = 'C_home/artikel';

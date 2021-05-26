@@ -32,7 +32,7 @@ class C_jadwal extends CI_Controller
 
     public function create_jadwal()
     {
-        $nama = $this->input->post('nama');
+        $nama = $this->input->post('pasien');
         $waktu = $this->input->post('waktu');
 
         $run = $this->M_jadwal->create_jadwal();
