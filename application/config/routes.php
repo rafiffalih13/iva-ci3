@@ -52,7 +52,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $route['default_controller'] = 'C_home/index'; #Edited
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
-$route['(:any)'] = 'C_home/index';
+// $route['(:any)'] = 'C_home/index';
 
 // --------- Added Route --------- //
 $route['jadwal'] = 'C_jadwal';

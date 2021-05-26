@@ -23,7 +23,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'https://iva-project.herokuapp.com/'; #edited
+$config['base_url'] = 'https://web-iva.herokuapp.com/'; #edited
 
 /*
 |--------------------------------------------------------------------------
@@ -53,7 +53,7 @@ $config['index_page'] = 'index.php';
 | WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!
 */
 $config['uri_protocol']    = 'REQUEST_URI';
-// $config['uri_protocol']    = 'AUTO';
+
 /*
 |--------------------------------------------------------------------------
 | URL suffix
@@ -380,7 +380,7 @@ $config['encryption_key'] = '';
 $config['sess_driver'] = 'files';
 $config['sess_cookie_name'] = 'ci_session';
 $config['sess_expiration'] = 7200;
-$config['sess_save_path'] = sys_get_temp_dir();
+$config['sess_save_path'] = NULL;
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;
