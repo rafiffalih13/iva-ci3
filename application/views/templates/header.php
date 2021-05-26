@@ -36,6 +36,30 @@
 	<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
 	<script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/holder.min.js"></script>
 
+	<!-- Firebase -->
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+
+	<script>
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		var firebaseConfig = {
+			apiKey: "AIzaSyD6wQ-M1AskENHHlxg1TlDe4EpgD9OyEKM",
+			authDomain: "iva-project-4b0b4.firebaseapp.com",
+			projectId: "iva-project-4b0b4",
+			storageBucket: "iva-project-4b0b4.appspot.com",
+			messagingSenderId: "689162673644",
+			appId: "1:689162673644:web:b1bd2c015fb1080238b4c9",
+			measurementId: "G-4Q6BCNWR8X"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+	</script>
 
 </head>
 
