@@ -27,7 +27,7 @@ class C_dokter extends CI_Controller
         $this->form_validation->set_rules('password', 'Password', 'required');
 
         if ($this->form_validation->run() === FALSE) {
-            redirect('c_dokter/loginview');
+            redirect('C_dokter/loginview');
         } else {
             // Get username
             $username = $this->input->post('username');
@@ -59,7 +59,7 @@ class C_dokter extends CI_Controller
                 // Set message
                 $this->session->set_flashdata('login_failed', 'Login is invalid');
 
-                redirect('c_dokter/loginview');
+                redirect('C_dokter/loginview');
             }
         }
     }
@@ -70,6 +70,6 @@ class C_dokter extends CI_Controller
         $this->session->unset_userdata('user_id');
         $this->session->unset_userdata('username');
 
-        redirect('c_home');
+        redirect('C_home');
     }
 }

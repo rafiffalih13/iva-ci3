@@ -37,6 +37,6 @@ class C_jadwal extends CI_Controller
 
         $run = $this->M_jadwal->create_jadwal();
 
-        redirect('c_jadwal');
+        redirect('C_jadwal');
     }
 }
