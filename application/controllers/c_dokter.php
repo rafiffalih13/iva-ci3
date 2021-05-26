@@ -1,5 +1,5 @@
 <?php
-class c_dokter extends CI_Controller
+class C_dokter extends CI_Controller
 {
     public function index($page = 'Input Jadwal')
     {

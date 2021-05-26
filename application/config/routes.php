@@ -54,5 +54,5 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 // --------- Added Route --------- //
-$route['jadwal'] = 'c_jadwal/index';
-$route['inputjadwal'] = 'c_dokter/index';
+$route['jadwal'] = 'C_jadwal/index';
+$route['inputjadwal'] = 'C_dokter/index';

@@ -71,10 +71,10 @@
 			<ul class="navbar-nav ml-md-auto">
 
 				<?php if (!$this->session->userdata('logged_in')) : ?>
-					<li class="nav-item"><a class="nav-link" href="<?php echo base_url(); ?>c_dokter/loginview">Login</a>
+					<li class="nav-item"><a class="nav-link" href="<?php echo base_url(); ?>C_dokter/loginview">Login</a>
 					</li>
 				<?php else : ?>
-					<li class="nav-item"><a class="nav-link" href="<?php echo base_url(); ?>c_dokter/logout">Logout</a>
+					<li class="nav-item"><a class="nav-link" href="<?php echo base_url(); ?>C_dokter/logout">Logout</a>
 					</li>
 				<?php endif; ?>
 

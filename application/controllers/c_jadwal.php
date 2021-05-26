@@ -1,5 +1,5 @@
 <?php
-class c_jadwal extends CI_Controller
+class C_jadwal extends CI_Controller
 {
     public function index($page = 'jadwal')
     {
