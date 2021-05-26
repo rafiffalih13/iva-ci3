@@ -39,7 +39,7 @@ class C_dokter extends CI_Controller
             // $password = md5($this->input->post('password'));
 
             // Login User
-            $user_id = $this->m_dokter->login($username, $password);
+            $user_id = $this->M_dokter->login($username, $password);
 
             if ($user_id) {
                 // Create Session

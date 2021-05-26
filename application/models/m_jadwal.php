@@ -1,5 +1,5 @@
 <?php
-class m_jadwal extends CI_Model
+class M_jadwal extends CI_Model
 {
 	public function __construct()
 	{

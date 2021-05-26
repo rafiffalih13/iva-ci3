@@ -6,7 +6,7 @@ class C_jadwal extends CI_Controller
         date_default_timezone_set('Asia/Makassar');
         $data['title'] = ucfirst($page);
 
-        $data['jadwal'] = $this->m_jadwal->get_jadwal();
+        $data['jadwal'] = $this->M_jadwal->get_jadwal();
 
         // $data['first'] = $this->m_jadwal->get_first();
 
@@ -35,7 +35,7 @@ class C_jadwal extends CI_Controller
         $nama = $this->input->post('nama');
         $waktu = $this->input->post('waktu');
 
-        $run = $this->m_jadwal->create_jadwal();
+        $run = $this->M_jadwal->create_jadwal();
 
         redirect('c_jadwal');
     }
